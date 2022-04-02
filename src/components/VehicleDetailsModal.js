@@ -1,12 +1,15 @@
 import React from 'react'
 import Modal from 'react-modal'
 
+import { customStyles } from './consts'
+
 const VehicleDetailsModal = ({modalIsOpen, closeModal, selectedVehicleData}) => {
   return (
     <Modal
       isOpen={modalIsOpen}
       onRequestClose={closeModal}
       contentLabel='Details'
+      style={customStyles}
     >
       <h2>
         Car Details
@@ -23,7 +26,7 @@ const VehicleDetailsModal = ({modalIsOpen, closeModal, selectedVehicleData}) => 
           Range: {`${selectedVehicleData?.range?.distance} ${selectedVehicleData?.range?.unit}`}
         </div>
       </div>
-      <button onClick={closeModal}>Close</button>
+      <button className='btn mt-3' onClick={closeModal}>Close</button>
     </Modal>
   )
 }

@@ -56,7 +56,8 @@ const Vehicles = () => {
   }
 
   return(
-    !loading ? (<Fragment>
+    !loading ? 
+    (<Fragment>
       <Select options={sortByOptions} value={selectedSortByOption} onChange={handleOnSelectChange} placeholder='Sort By'/>
       <div className='vehicle-container'>
         {vehicleData?.map((vehicle)=>(

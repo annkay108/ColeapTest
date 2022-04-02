@@ -16,5 +16,19 @@ img {
 }
 
 .vehicle-details {
-  background-color: grey;  
+  background-color: #2ab680;  
+}
+
+.btn {
+  text-align: center;
+  border: 2px solid transparent;
+  padding: 0.46rem 1rem;
+  border-radius: 20px;
+  color: #111;
+  background-color: #b1cf5d;
+  float: right;
+}
+
+.mt-3 {
+  margin-top: 1rem !important;
 }
